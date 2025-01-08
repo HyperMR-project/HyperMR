@@ -1,0 +1,43 @@
+% Experiment 1: MVM
+% -----------------------------------------------------------------------------
+% Hardware Configuration
+storage-unit-height: 512
+storage-unit-width: 512
+enable-simulator: Yes
+load-compressed-mat: Yes
+output-file: No
+
+% Results
+check-result: Yes
+only-show-compression: No
+
+% HyperMR
+hypergraph-partitioning-config: HyperMR-v3
+hybrid-partitioning-factor: 0
+storage-optimized: No
+query-aware-optimization: No
+time-limit: -1
+
+% Workloads
+cost-model-test: No
+cost-analysis-test: No
+
+% Datasets
+small-matrices: Yes
+large-matrices: Yes
+symmetric-matrices: No
+datasets: NULL
+
+% Measures
+runtime: Yes
+compression-ratio: Yes
+cost-model: No
+
+% Storage Schemes
+HyperMR: Yes
+GSMR: No
+ReSpar: No
+GMR: No
+kMeans: No
+TraNNsformer: No
+METIS: No

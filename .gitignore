@@ -1,0 +1,8 @@
+build/
+.vscode/
+.VSCodeCounter/
+html/
+latex/
+
+test/datasets/SDSS/mtx/
+test/datasets/sparse_matrix/

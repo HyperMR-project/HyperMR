@@ -1,0 +1,42 @@
+% Experiment 3: Gaussian Smoothing
+% -----------------------------------------------------------------------------
+% Hardware Configuration
+storage-unit-height: 512
+storage-unit-width: 512
+enable-simulator: Yes
+load-compressed-mat: No
+output-file: No
+
+% Results
+check-result: Yes
+only-show-compression: No
+
+% HyperMR
+hypergraph-partitioning-config: HyperMR-v3
+hybrid-partitioning-factor: 0
+time-limit: -1
+query-aware-optimization: Yes
+
+% Workloads
+gaussian-smoothing-test: Yes
+kernel-size: 2187
+stride: 1
+smoothing-simplification: Yes
+
+% Datasets
+sdss: No
+datasets: 7979473478104668160
+
+% Measures
+runtime: Yes
+compression-ratio: Yes
+cost-model: No
+
+% Storage Schemes
+HyperMR: Yes
+GSMR: No
+ReSpar: No
+GMR: No
+kMeans: No
+TraNNsformer: No
+METIS: No

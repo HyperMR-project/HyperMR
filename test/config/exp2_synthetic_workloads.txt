@@ -1,0 +1,41 @@
+% Experiment 2: Synthetic Workloads
+% -----------------------------------------------------------------------------
+% Hardware Configuration
+storage-unit-height: 512
+storage-unit-width: 512
+enable-simulator: Yes
+load-compressed-mat: No
+output-file: Yes
+
+% Results
+check-result: Yes
+only-show-compression: No
+
+% HyperMR
+hypergraph-partitioning-config: HyperMR-v3
+hybrid-partitioning-factor: 0
+time-limit: -1
+query-aware-optimization: Yes
+
+% Workloads
+adaptive-storage-test: Yes
+accessed-rows-percentage: 20
+accessed-columns-percentage: 20
+
+% Datasets
+sdss: Yes
+datasets: NULL
+
+% Measures
+runtime: Yes
+compression-ratio: Yes
+cost-model: No
+
+% Storage Schemes
+HyperMR: Yes
+GSMR: No
+ReSpar: No
+GMR: No
+kMeans: No
+TraNNsformer: No
+METIS: No

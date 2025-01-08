@@ -1,0 +1,35 @@
+% Experiment 4: Baselines
+% -----------------------------------------------------------------------------
+% Hardware Configuration
+storage-unit-height: 512
+storage-unit-width: 512
+
+% Storage Schemes
+HyperMR: Yes
+GSMR: No
+GMR: No
+ReSpar: No
+kMeans: No
+METIS: No
+TraNNsformer: No
+
+% HyperMR
+hypergraph-partitioning-config: HyperMR-v3
+hybrid-partitioning-factor: 0
+storage-optimized: No
+query-aware-optimization: No
+time-limit: 385
+
+% Datasets
+small-matrices: No
+large-matrices: No
+symmetric-matrices: No
+sdss: No
+datasets: crystm02
+
+% Measures
+runtime: Yes
+cost-model: No
+
+% Results
+check-result: Yes
